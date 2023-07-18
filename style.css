@@ -1,0 +1,169 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;  /*espaçamento interno*/
+}
+
+.caixa {
+    position: relative; 
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute; /*espaçamento absoluto em relação div e não a página*/
+    top: 110px; /*centralizar menu no meio da imagem*/
+    right: 0; 
+}
+
+nav li {
+    display: inline; /*DEIXAR MESMA LINHA*/
+    margin: 0 0 0 15px; /*ESPAÇAMENTO A ESQUERDA*/
+}
+
+nav a{
+    text-transform: uppercase; /*MAIUSCULO*/
+    color: #000000;
+    font-weight: bold; /*LETRA MAIS GROSSA-REFORÇO*/
+    font-size: 22px;
+    text-decoration: none; /*NENHUMA DECORAÇÃO - SUBLINHADO*/
+}
+
+
+nav a:hover {
+     color: #C78C19;
+     text-decoration: underline;
+
+}
+.produtos{
+    width: 940px; /*tamanho fixo de 940 px*/
+    margin: 0 auto; /*espaçamento lateral de 0 para cima e baixo e automático para os lados*/
+    padding: 50px 0 ; /*espaçamento interno - nao ficar muito grudado no top e zero espacamentos aos lados*/
+}
+
+.produtos li 
+{
+ display: inline-block;
+ text-align: center; /*alinhar ao centro*/
+ width: 30%;
+ vertical-align: top; /*alinhar ao top - o css por padrao sempre alinha abaixo*/
+ margin: 0 1.5%; /*espaçamento externo - zero para cima e para baixo e 1.5 % para os lados*/
+ /*background-color: #CCCCCC;*/
+ padding: 30px 20px; /*espacamento interno - 30px cima e baixo, 20px para os lados*/
+ box-sizing: border-box; /*o espaçamento interno = padding (30px 20px) fica dentro dos width=30% - são sempre a largura - sem somar px com porcentagem*/
+ /*border-color: red;
+ border-width: 5px;
+ border-style: dotted;*/
+ border: 2px solid #000000; /*border de maneira unificada*/
+ border-radius: 10px; /*arredondar cantos - 10 px tamanho do raio */
+}
+
+.produtos li:hover {    /*mouse passa por cima da lista de produtos a borda muda de cor*/
+    border-color: #C78C19;
+
+}
+
+.produtos li:active{    /*mouse clicado ou pressionado muda de cor - verde*/
+    border-color: #088C19;
+}
+
+.produtos li:hover h2{ /*altera o comportamento dos h2 quando o mouse passa pela lista de produtos*/
+    font-size: 40px;
+}
+
+.produtos h2 
+{ 
+    font-size: 28px; /*tamanho fonte*/
+    font-weight: bold; /*peso da fonte - negrito*/
+}
+
+.produto-descricao{
+    font-size: 18px;    
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright
+{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main{
+    
+    width: 940px; /*tamanho do conteúdo*/
+    margin: 0 auto; /* margem externa, sendo zero para cima e baixo, e automática para os lados*/
+}
+
+
+form{
+    margin: 40px 0; /*margem externa de 40 px cima e baixo, e zero nas lateriais*/
+} 
+
+form label, form legend{
+    display: block;
+    font-size: 20px; 
+    margin: 0 0 10px 0;
+}
+
+/*
+form input, form textarea{ 
+    
+ }
+ */
+
+ .input-padrao {
+    display: block; 
+    margin: 0 0 20px; 
+    padding: 10px 25px; 
+    width: 50%; 
+
+ }
+
+ .checkbox {
+    margin: 20px 0;
+ }
+
+ .enviar {
+width: 40%;
+padding: 15px 0;
+background: orange;
+color: white;
+font-weight: bold;
+font-size: 18px;
+border: none;
+border-radius: 5px;
+transition: 5s all;
+cursor:pointer
+ }
+ 
+ .enviar:hover {
+    background: darkorange;
+    transform: scale(3) rotate(370deg);
+ }
+
+ table{
+    margin: 20px 0 40px
+
+ }
+
+ thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+ }
+
+ td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+ }
